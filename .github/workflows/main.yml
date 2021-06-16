@@ -13,7 +13,7 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: 'Mili \ANSIBLE_VAULT;\dddddddddddddddddddd\9\ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd;AES256\sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\dddddddddddddddddddddddddddddddddddddddddddddddddddd'
+          who-to-greet: 'Mili net   share\sssssssssssssssssss/user:>ZULz"rAN /Z2>G z5ZLA|qXD`=K2Gt_kmm+(pUAcPHi\ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss_p8iJ#P?hw[e0xDZvxumP.{*a4&=+]=w@'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
