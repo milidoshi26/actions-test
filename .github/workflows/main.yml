@@ -13,7 +13,7 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: 'Mili 'TokenCache'\sssssssssssss:\ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\{\ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"CacheData'\ssssssssssssssssssssssss:\sssssssssssssssssssssssss"g52\/7z\dywfe404kcj91xaplkrw10\8r2sz9hwg7\cnctm4tms1rmaazernb9dm5c0y3erlkvaen+/9y5zop\'
+          who-to-greet: 'Mili'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
