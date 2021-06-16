@@ -4,7 +4,7 @@ const github = require('@actions/github');
 try {
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}! @-fm6#2/ek72c+jsbqiyxfwttk5v==;70j5kjlkzz+60/7um75w2j==dlj4jm3fz9x97lxs13+mlt==rvqtli7ysuirmlk9cn7g6/3==oj/xk2elqfhozscjuoeoa1==05zhjwjei7og4pi+9vqm5md==|`);
+  console.log(`Hello ${nameToGreet}! [\ssssssssssssssssssssssssssssssssSuppressMessage\sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\\\sssss"MicrosoftdSecurity"\sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,\sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss@"CS001"\ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,\ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssJustification\sssssssssssssssssssssssssssssssssssss=\sssssssssssssssssssssssssssssssssssssssss"Q$3K3#ckM%_PtjSmgeL8~Hw!FNL:Mh"\sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\\\sssssssssssssssssssssssssssssssssssssssssss\]`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
