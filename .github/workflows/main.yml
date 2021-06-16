@@ -9,7 +9,7 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Credentials redaction step T!T@n1130
+      - name: Credentials redaction step
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
