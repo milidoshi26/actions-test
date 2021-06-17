@@ -13,8 +13,7 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: 'Mili xoxa\-g76xi\a\fo3s1s0f4rnlha1wagmgskqns6zw15dr69yi2ld\as2qemu21kxmby2xv1q9k9kbtllfslcep xoxa\-g76xi\a\fo3s1s0f4rnlha1wagmgskqns6zw15dr69yi2ld\as2qemu21kxmby2xv1q9k9kbtllfslcep xoxa\-g76xi\a\fo3s1s0f4rnlha1wagmgskqns6zw15dr69yi2ld\as2qemu21kxmby2xv1q9k9kbtllfslcep
-'
+          who-to-greet: 'Mili xoxa\-g76xi\a\fo3s1s0f4rnlha1wagmgskqns6zw15dr69yi2ld\as2qemu21kxmby2xv1q9k9kbtllfslcep'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
