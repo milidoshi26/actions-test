@@ -1,19 +1,24 @@
+# File: .github/workflows/workflow.yml
+
 on: [push]
 
+name: AzureCLISample
+
 jobs:
-  hello_world_job:
+
+  build-and-deploy:
     runs-on: ubuntu-latest
-    name: A job to test the runner post refactoring
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Credentials redaction step
-        uses: ./ # Uses an action in the root directory
-        id: hello
-        with:
-          who-to-greet: 'Mili T!T@n1130'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Azure CLI script
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          az account show
+          az storage -h
