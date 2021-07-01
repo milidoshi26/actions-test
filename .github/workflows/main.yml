@@ -17,5 +17,5 @@ jobs:
     
     - name: Azure CLI script
       uses: milidoshi26/action-test
-        with:
+      with:
           who-to-greet: 'Mona the Octocat'
