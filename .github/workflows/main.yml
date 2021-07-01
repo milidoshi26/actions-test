@@ -16,9 +16,6 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     
     - name: Azure CLI script
-      uses: milidoshi26/CLI@releases/v0-beta
-      with:
-        azcliversion: 2.0.72
-        inlineScript: |
-          az account show
-          az storage -h
+      uses: milidoshi26/action-test
+        with:
+          who-to-greet: 'Mona the Octocat'
