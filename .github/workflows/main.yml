@@ -22,4 +22,3 @@ jobs:
         inlineScript: |
           az account show
           az storage -h
-          az  xoxp\-sut9wktw962fpm25l-p1q\plocdvar8tjfkmj\y0b0miu3e8142mhz2oi23dfu1oylf5alzj8q64xpzjk0rr0tw1g5a7
