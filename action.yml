@@ -1,13 +1,14 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: Azure CLI Action
+uses: milidoshi26/cli@releases/v0-beta
+description: 'The action is used to execute Azure CLI commands'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  inlineScript:
+    description: 'Specify the script here'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  azcliversion:
+    description: 'Azure CLI version to be used to execute the script'
+    required: false
+    default: 'latest'
 runs:
   using: 'node12'
   main: 'index.js'
