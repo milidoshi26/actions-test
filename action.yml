@@ -1,5 +1,5 @@
 name: Azure CLI Action
-uses: milidoshi26/action-test
+uses: milidoshi26/actions-test
 description: 'The action is used to execute Azure CLI commands'
 inputs:
   inlineScript:
