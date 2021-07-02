@@ -7,7 +7,7 @@ name: AzureCLISample
 jobs:
 
   build-and-deploy:
-    runs-on: [self-hosted, windows]
+    runs-on: windows-latest
     steps:
     
     - name: Azure Login
