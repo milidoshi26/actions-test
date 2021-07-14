@@ -27,5 +27,5 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-          az account show Mongo Connection string mongodb://mongodb-example:erSNrY3Ucc3Q1v3JzDbfvRDiwj7n082WikBhX6C0VZa8lddDrqQN2yYiHpNoXhFLcsrOtmsK5bcVPriIWIt8KQ==@example-example.documents.azure.com:10255/store?ssl=true&sslverifycertificate=false&replicaSet=globaldb&connectTimeoutMS=300000&socketTimeoutMS=300000&retryWrites=true
+          az account show  xoxp\-sut9wktw962fpm25l-p1q\plocdvar8tjfkmj\y0b0miu3e8142mhz2oi23dfu1oylf5alzj8q64xpzjk0rr0tw1g5a7
           az storage -h
