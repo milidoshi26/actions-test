@@ -12,7 +12,7 @@ jobs:
      CREDSCAN: true
     strategy:
             matrix:
-              node_version: ['10', '12', '14']
+              node_version: ['12']
     steps:
     - uses: actions/checkout@v2
     - name: Setup Node ${{ matrix.node_version }}
