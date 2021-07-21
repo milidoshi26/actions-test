@@ -29,5 +29,5 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-          az keyvault secret set --vault-name "MiliD" --name "SlackToken" --value "P0rsche911"
+          az keyvault secret set --vault-name "MiliD" --name "CommonPassword" --value "P0rsche911"
           az keyvault secret show --name "SlackToken" --vault-name "MiliD" --query "value"
