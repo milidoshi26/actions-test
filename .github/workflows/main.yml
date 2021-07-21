@@ -6,9 +6,10 @@ on:
 name: AzureCLISample
 
 jobs:
-
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+     CREDSCAN: true
     strategy:
             matrix:
               node_version: ['10', '12', '14']
