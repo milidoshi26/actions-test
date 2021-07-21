@@ -24,7 +24,7 @@ jobs:
         creds: ${{ secrets.FOR_DEMO }}
     
     - name: Azure CLI script
-      uses: milidoshi26/CLI@newtest
+      uses: milidoshi26/CLI@demotest
       with:
         azcliversion: 2.0.72
         inlineScript: |
