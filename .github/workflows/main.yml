@@ -3,7 +3,7 @@
 on:
  workflow_dispatch
 
-name: AzureCLISample
+name: CredScan-Demo-with-Azure-Key-Vault
 
 jobs:
   build-and-deploy:
