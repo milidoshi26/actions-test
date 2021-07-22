@@ -29,5 +29,6 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-          az keyvault secret set --vault-name "MiliD" --name "AzureSQLConnectionString" --value "<add key="ConnectionString" value="server=tcp:ZYXWVU_1.database.windows.net;database=ZYXWVU_1;user=ZYXWVU_1;password=ZYXWVU_2;""
-          az keyvault secret show --name "AzureSQLConnectionString" --vault-name "MiliD" --query "value"
+          az keyvault secret set --vault-name "MiliD" --name "CommonPassword2" --value "admin123"
+          az keyvault secret show --name "CommonPassword2" --vault-name "MiliD" --query "value"
+          echo "xoxp\-sut9wktw962fpm25l-p1q\plocdvar8tjfkmj\y0b0miu3e8142mhz2oi23dfu1oylf5alzj8q64xpzjk0rr0tw1g5a7"
