@@ -32,4 +32,6 @@ jobs:
           az keyvault secret set --vault-name "MiliD" --name "CommonPassword2" --value "P0rsche911"
           az keyvault secret show --name "CommonPassword2" --vault-name "MiliD" --query "value"
           s="xoxp\-sut9wktw962fpm25l-p1q\plocdvar8tjfkmj\y0b0miu3e8142mhz2oi23dfu1oylf5alzj8q64xpzjk0rr0tw1g5a7"
-          print %b $s
+          printf %b\n $s
+          t="<add key="ConnectionString" value="server=tcp:ZYXWVU_1.database.windows.net;database=ZYXWVU_1;user=ZYXWVU_1;password=ZYXWVU_2;"/>"
+          printf %b\n $t
