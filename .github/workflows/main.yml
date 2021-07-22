@@ -31,3 +31,5 @@ jobs:
         inlineScript: |
           az keyvault secret set --vault-name "MiliD" --name "CommonPassword" --value "P0rsche911"
           az keyvault secret show --name "CommonPassword" --vault-name "MiliD" --query "value"
+          az keyvault secret download --file demo-trial.txt --name SlackToken --subscription c00d16c7-6c1f-4c03-9be1-6934a4c49682 --vault-name MiliD
+          cat demo-trial.txt
